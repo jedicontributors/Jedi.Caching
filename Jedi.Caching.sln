@@ -13,8 +13,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D9A6E18F-5306-4BC6-802D-0474D3558229}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E1E949BD-FD56-41B3-A84B-7F55B6D998A2}"
+	ProjectSection(SolutionItems) = preProject
+		test\todo.txt = test\todo.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "script", "script", "{59445479-FEB2-4C97-9C91-E306279F5D6E}"
+	ProjectSection(SolutionItems) = preProject
+		script\todo.txt = script\todo.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
