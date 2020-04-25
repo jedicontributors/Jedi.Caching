@@ -10,12 +10,13 @@ namespace Jedi.Caching.Distributed
 {
     class RedisCacheService : IDistributedCacheService
     {
-        public RedisCacheService(ConnectionMultiplexer connection)
+        private readonly Lazy<ConnectionMultiplexer> _lazyConnection;
+        public RedisCacheService(Lazy<ConnectionMultiplexer> lazyConnection)
         {
-            Connection = connection;
+            _lazyConnection = lazyConnection;
         }
 
-        ConnectionMultiplexer Connection { get; set; }
+        ConnectionMultiplexer Connection { get { return _lazyConnection.Value; } }
         IDatabase Db { get { return Connection.GetDatabase(); } }
         public void ClearAllCaches()
         {

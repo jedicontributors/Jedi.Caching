@@ -15,6 +15,7 @@ namespace Jedi.Caching.Distributed
             config.ConnectTimeout = redisConfig.ConnectionTimeout;
             config.SyncTimeout = redisConfig.SyncTimeout;
             config.AllowAdmin = redisConfig.AllowAdmin;
+            config.AbortOnConnectFail = redisConfig.AbortConnect;
             return config;
         }
     }

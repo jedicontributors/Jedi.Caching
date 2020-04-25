@@ -15,5 +15,7 @@ namespace Jedi.Caching.Distributed
         public int ConnectionRetryAttemps { get; set; } = 3;
 
         public bool AllowAdmin { get; set; } = true;
+
+        public bool AbortConnect { get; set; } = false;
     }
 }
