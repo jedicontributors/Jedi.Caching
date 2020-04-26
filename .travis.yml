@@ -1,8 +1,10 @@
 # Travis-CI Build for Jedi.Caching
 # see travis-ci.org for details
 
+sudo: required
+dist: bionic
 language: csharp
-dist: trusty
+solution: Jedi.Caching.sln
 mono: none
 dotnet: 3.1.101
 script:
@@ -10,3 +12,5 @@ script:
   - dotnet build
 notifications:
   slack: jedicontributors:1iwMEyHygp3cJUsXL6AljEka
+
+  
