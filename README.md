@@ -6,4 +6,4 @@
 
 # Overview
 
-Jedi.Caching is an abstraction library over [StackExchange.Redis]([https://stackexchange.github.io/StackExchange.Redis/]) 
+Jedi.Caching is an abstraction library over [StackExchange.Redis](https://stackexchange.github.io/StackExchange.Redis/) 
